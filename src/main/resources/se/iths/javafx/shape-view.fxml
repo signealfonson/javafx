@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.iths.javafx.ShapeViewController">
+   <children>
+      <Pane layoutY="26.0" prefHeight="378.0" prefWidth="488.0">
+         <children>
+            <Canvas fx:id="canvas" height="371.0" onMouseClicked="#onCanvasClicked" width="488.0" />
+         </children></Pane>
+      <VBox layoutX="488.0" layoutY="98.0" prefHeight="91.0" prefWidth="112.0" spacing="10.0">
+         <children>
+            <Button fx:id="undoButton" mnemonicParsing="false" onAction="#undoClicked" text="Undo" />
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveClicked" text="Save" />
+            <CheckBox fx:id="selectModeBox" mnemonicParsing="false" text="Select mode" />
+         </children>
+      </VBox>
+      <HBox layoutY="1.0" prefHeight="26.0" prefWidth="376.0" spacing="1.0">
+         <children>
+            <ChoiceBox fx:id="choiceBox" prefWidth="150.0" />
+            <ColorPicker fx:id="colorPickerChoice" />
+            <TextField fx:id="sizeField" prefHeight="26.0" prefWidth="55.0" text="20" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
